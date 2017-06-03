@@ -10,6 +10,8 @@ It's a monitoring tool that allows user to track hot topics and news about every
 
 [NuxtJS](https://nuxtjs.org): Create VueJS app easily.
 
+[TachyonsCSS](http://tachyons.io) Functional CSS framework.
+
 ## Build Setup
 
 ``` bash
