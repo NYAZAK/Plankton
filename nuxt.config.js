@@ -7,10 +7,10 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', content: 'Monitor hot topics and news about each crypto currencies using reddit, twitter, and graphical analysis at the same place' }
+      { hid: 'description', content: 'Monitor hot topics and news about each crypto currencies using reddit, twitter, and graphical analysis at the same place' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
     ]
   },
   /*
@@ -18,7 +18,8 @@ module.exports = {
   */
   css: [
     '~assets/css/main.css',
-    '~assets/css/normalize.css'
+    '~assets/css/normalize.css',
+    'tachyons/css/tachyons.min.css',
   ],
   /*
   ** Customize the progress-bar color
@@ -35,8 +36,8 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   }
-}
+};
