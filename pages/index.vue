@@ -1,13 +1,22 @@
 <template>
-  <span>{{currencies}}</span>
+  <div>
+    <search />
+    {{selectedCurrency}}
+  </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
+import Search from '../components/Search.vue';
 
 export default {
-  computed: mapState({
-    currencies: state => state.currencies,
-  }),
+  components: {
+    Search,
+  },
+  computed: {
+    ...mapState({
+      selectedCurrency: state => state.selectedCurrency,
+    }),
+  },
 };
 </script>

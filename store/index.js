@@ -7,8 +7,13 @@ const createStore = () => {
   return new Vuex.Store({
     state: {
       currencies: currencies,
+      selectedCurrency: null,
     },
-    mutations: {},
+    mutations: {
+      setSelectedCurrency(state, currency) {
+        state.selectedCurrency = currency;
+      }
+    },
     actions: {},
     getters: {},
   });

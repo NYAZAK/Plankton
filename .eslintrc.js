@@ -12,8 +12,11 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "comma-dangle": ["error", "only-multiline"],
-    "semi": ["error", "always"],
+    'comma-dangle': ['error', 'only-multiline'],
+    'semi': ['error', 'always'],
+    'space-before-function-paren': ['error', 'never'],
+    'quotes': ['error', 'single'],
+    'keyword-spacing': 'off',
   },
   globals: {}
 }
